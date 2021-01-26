@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas.pbo.FXMLDocumentController">
+    <children>
+      <AnchorPane prefHeight="589.0" prefWidth="227.0" style="-fx-background-color: #006994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="508.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="43.0" layoutY="408.0" mnemonicParsing="false" onAction="#add_data" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: green;" text="Add" />
+            <Button layoutX="43.0" layoutY="467.0" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: orange;" text="Update" />
+            <Button layoutX="43.0" layoutY="526.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: red;" text="Delete" />
+            <TextField fx:id="txt_Npwp" layoutX="40.0" layoutY="51.0" prefHeight="35.0" prefWidth="180.0" promptText="Npwp" />
+            <TextField fx:id="txt_Nama" layoutX="40.0" layoutY="102.0" prefHeight="35.0" prefWidth="180.0" promptText="Nama" />
+            <TextField fx:id="txt_Alamat" layoutX="40.0" layoutY="152.0" prefHeight="35.0" prefWidth="180.0" promptText="Alamat" />
+            <TextField fx:id="txt_jenis_pajak" layoutX="40.0" layoutY="203.0" prefHeight="35.0" prefWidth="180.0" promptText="jenis pajak" />
+            <TextField fx:id="txt_Terbilang" layoutX="40.0" layoutY="250.0" prefHeight="35.0" prefWidth="180.0" promptText="Terbilang" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabel_user" layoutX="307.0" layoutY="74.0" prefHeight="564.0" prefWidth="508.0">
+        <columns>
+          <TableColumn fx:id="col_Npwp" prefWidth="113.0" text="Npwp" />
+          <TableColumn fx:id="col_Nama" prefWidth="89.0" text="Nama" />
+            <TableColumn fx:id="col_Alamat" prefWidth="115.0" text="Alamat" />
+            <TableColumn fx:id="col_jenis_pajak" prefWidth="84.0" text="Jenis pajak" />
+            <TableColumn fx:id="col_Terbilang" prefWidth="105.0" text="Terbilang" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
